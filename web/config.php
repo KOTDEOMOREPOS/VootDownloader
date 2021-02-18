@@ -24,7 +24,8 @@ else {
 $GLOBALS["START_MESSAGE"] = <<<EOM
 This Is A Personal File Store Bot For @MoviesBazzz </a>
 
-Subscribe ℹ️ @MoviesBazzz if you're using this bot! ❤️
+Subscribe ℹ️ @MoviesBazzz if you're using this bot! 
+
 EOM;
 $GLOBALS["CHECKING_MESSAGE"] = "Generating...😝";
 require_once __DIR__ . "/../vendor/autoload.php";
