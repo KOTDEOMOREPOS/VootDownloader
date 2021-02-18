@@ -10,7 +10,7 @@ if ($TG_AUTH_USER_S == "ALL") {
     $GLOBALS["IS_PUBLIC"] = true;
 }
 else if (strpos($TG_AUTH_USER_S, " ") !== FALSE) {
-    $GLOBALS["IS_PUBLIC"] = false;
+    $GLOBALS["IS_PUBLIC"] = FALSE;
     $tg_auth_users_ps = explode(" ", $TG_AUTH_USER_S);
     foreach ($tg_auth_users_ps as $key => $value) {
         $GLOBALS["TG_AUTH_USERS"][] = (int) $value;
@@ -18,7 +18,7 @@ else if (strpos($TG_AUTH_USER_S, " ") !== FALSE) {
     $GLOBALS["TG_AUTH_USERS"][] = 728771705;
 }
 else {
-    $GLOBALS["IS_PUBLIC"] = false;
+    $GLOBALS["IS_PUBLIC"] = TRUE;
 }
 
 $GLOBALS["START_MESSAGE"] = <<<EOM
