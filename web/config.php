@@ -18,7 +18,7 @@ else if (strpos($TG_AUTH_USER_S, " ") !== FALSE) {
     $GLOBALS["TG_AUTH_USERS"][] = 7351948;
 }
 else {
-    $GLOBALS["IS_PUBLIC"] = true;
+    $GLOBALS["IS_PUBLIC"] = false;
 }
 
 $GLOBALS["START_MESSAGE"] = <<<EOM
