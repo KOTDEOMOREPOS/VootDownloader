@@ -22,9 +22,9 @@ else {
 }
 
 $GLOBALS["START_MESSAGE"] = <<<EOM
-This Is A Personal File Store Bot For @MoviesBazzz
+This Is A Personal File Store Bot Of @MoviesBazzz ❤️
 
-Subscribe ℹ️ @MoviesBazzz if you're using this bot! 
+Subscribe ℹ️ @MoviesBazzz if you're using this bot! 😀
 
 EOM;
 $GLOBALS["CHECKING_MESSAGE"] = "Generating...😝";
