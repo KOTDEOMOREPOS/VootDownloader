@@ -7,7 +7,7 @@ $TG_AUTH_USER_S = (string) getenv("TG_AUTH_USERS");
 $GLOBALS["IS_PUBLIC"] = !$TG_AUTH_USER_S;
 $GLOBALS["TG_AUTH_USERS"] = array();
 if ($TG_AUTH_USER_S == "ALL") {
-    $GLOBALS["IS_PUBLIC"] = false;
+    $GLOBALS["IS_PUBLIC"] = true;
 }
 else if (strpos($TG_AUTH_USER_S, " ") !== FALSE) {
     $GLOBALS["IS_PUBLIC"] = false;
