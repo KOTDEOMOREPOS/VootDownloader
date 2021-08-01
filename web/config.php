@@ -22,10 +22,9 @@ else {
 }
 
 $GLOBALS["START_MESSAGE"] = <<<EOM
-This Is A Personal File Store Bot Of @MoviesBazzz ❤️
-
-Subscribe ℹ️ @MoviesBazzz if you're using this bot! 😀
-
+𝐓𝐡𝐢𝐬 𝐢𝐬 𝐀 𝐕𝐨𝐨𝐭 𝐔𝐑𝐋 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭 𝐁𝐲 @𝐓𝐡𝐞𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝.
+☆ 𝐁𝐞𝐬𝐭 𝐕𝐨𝐨𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭
+☆ 𝐉𝐮𝐬𝐭 𝐒𝐞𝐧𝐝 𝐓𝐡𝐞 𝐔𝐫𝐥
 EOM;
-$GLOBALS["CHECKING_MESSAGE"] = "Generating...😝";
+$GLOBALS["CHECKING_MESSAGE"] = "𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐭𝐨 𝐭𝐡𝐞 𝐒𝐞𝐫𝐯𝐞𝐫.....😝";
 require_once __DIR__ . "/../vendor/autoload.php";
