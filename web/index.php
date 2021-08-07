@@ -55,10 +55,21 @@ $Bot->onMessage(function (Message $message){
     }
 });
 
-
-Message::addMethod("getLink", function (){
-    $status_message = $this->reply($GLOBALS["CHECKING_MESSAGE"]);
-    $req_message = $this->forward($GLOBALS["TG_DUMP_CHANNEL_ID"]);
-    $required_url = "https://t.me/" . $GLOBALS["TG_BOT_USERNAME"] . "?start=" . "view_{$req_message->message_id}_tg";
-    $status_message->editText($required_url);
-});
+$url =$_GET['q'];
+$id = end(explode('/', $url));
+$api =file_get_contents("https://apiv2.voot.com/wsv_2_3/playBack.json?mediaId=$id");
+$apis =json_decode($api);
+$url =$apis->assets[0]->assets[0]->items[0]->URL;
+$title =$apis->assets[0]->assets[0]->items[0]->mediaName;
+$des =$apis->assets[0]->assets[0]->items[0]->desc;
+$img =$apis->assets[0]->assets[0]->items[0]->imgURL;
+if($url ==""){
+$status ="invalid error";
+}
+else{
+$status="ok";
+}
+$apii = array("status" => $status, "title" => $title, "description" => $des, "thumbnail" => $img, "video_url" => $url);
+$api =json_encode($apii);
+header("Content-Type: application/json");
+echo $api;
